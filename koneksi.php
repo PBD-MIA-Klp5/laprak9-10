@@ -6,6 +6,7 @@ function open_connection() {
 	$password = "";
 	$dbname   = "akademik";
 	$koneksi  = mysqli_connect($hostname, $username, $password, $dbname);
+	$koneksi = mysqli_connect("localhost","root","","akademik");
 	return $koneksi;
 }
 ?>
